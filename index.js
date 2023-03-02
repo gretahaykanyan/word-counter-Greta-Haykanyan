@@ -71,6 +71,9 @@ function countSentences(sentences) {
     ) {
       count++;
     }
+    if( arr[i].split(" ").join("").length === 0){
+      count--;
+    }
   }
   if (lastElem === "." || lastElem === "?" || lastElem === "!" || lastElem === "...") {
     count++;
